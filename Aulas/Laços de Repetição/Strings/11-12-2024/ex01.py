@@ -7,3 +7,9 @@
 frase = input('Digite a frase: ')
 
 QtdLetras = 0
+
+while QtdLetras < len(frase):
+    if frase[QtdLetras] == ' ' and frase[QtdLetras - 1] != ' ':
+        QtdLetras += 1
+
+print(QtdLetras)
